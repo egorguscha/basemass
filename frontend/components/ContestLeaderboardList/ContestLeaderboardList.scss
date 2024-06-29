@@ -1,0 +1,73 @@
+.contestLeaderboardList {
+	&__title {
+		margin-bottom: 2rem;
+		margin-inline-start: 95px;
+		color: #FFFFFF;
+		font-weight: 500;
+		font-size: 1.5rem;
+	}
+
+	&__list {
+		position: relative;
+	}
+
+	&__item {
+		display: grid;
+		grid-template-columns: 3ch 3fr 1fr;
+		width: 100%;
+		gap: 1rem;
+		margin: 0.5rem 0;
+		padding: 4px 45px 4px 60px;
+		color: #BFC5D9;
+		font-size: 20px;
+		line-height: 133%;
+		list-style: none;
+		cursor: pointer;
+ 
+		&:hover {
+			color: #FFFFFF;
+		}
+
+		&--active {
+			clip-path: polygon(100% 50%, 97% 100%, 3% 100%, 0 50%, 3% 0px, 97% 0px);
+			background-color: rgba(146, 118, 39, 0.2);
+			color: #FFE191;
+		}
+	}
+
+	&__loading {
+		text-align: center;
+		padding: 10rem;
+		font-size: 1.5rem;
+	}
+
+	&__name {
+		font-family: "Roboto Mono", "Courier New", "Courier", "monospace";
+	}
+
+	&__score {
+		justify-self: end;
+	}
+}
+
+
+@media (max-width: 1440px) { //------------------------------------------------------------------------------------ 1440
+	.contestLeaderboardList {
+        &__title {
+            margin-inline-start: 70px;
+        }
+        &__item {
+            padding: 4px 25px 4px 35px;
+            font-size: 18px;
+        }
+    }
+}
+
+
+@media (max-width: 1280px) { //------------------------------------------------------------------------------------ 1280
+	.contestLeaderboardList {
+        &__item {
+            font-size: 15px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.planet {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&--loading-text {
+		font-size: 1rem;
+	}
+
+	&__canvas-wrapper {
+		&--not-displayed {
+			display: none;
+		}
+	}
+
+	&__wrapper--flex-gap {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+}

@@ -1,0 +1,124 @@
+.dashboard {
+	display: grid;
+	grid-template-columns: minmax(250px, 350px) 1fr minmax(250px, 350px);
+	grid-template-rows: minmax(63vh, 600px) 2rem;
+	row-gap: 1.25rem;
+	grid-template-areas: 
+		"left center right"
+		". message ."
+		"mint play deploy";
+	margin-bottom: 50px;
+
+	&__left {
+		grid-area: left;
+		margin-top: 10vh;
+		display: flex;
+		gap: 5rem;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__center {
+		grid-area: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		// background-image: url('/img/bg-planet.png');
+	}
+
+	&__right {
+		grid-area: right;
+		margin-top: 10vh;
+	}
+
+	&__area-message {
+		grid-area: message;
+		place-self: center;
+	}
+
+	&__area-mint {
+		grid-area: mint;
+	}
+
+	&__area-play {
+		grid-area: play;
+	}
+
+	&__area-deploy {
+		grid-area: deploy;
+	}
+}
+
+@media (max-width: 1280px) { //------------------------------------------------------------------------------------ 1280
+	// .page {
+	// 	&__left {width: 260px;}
+	// 	&__center {width: calc(100% - 520px);}
+	// 	&__right {width: 260px;}
+	// }
+}
+
+@media (max-width: 1200px) { //------------------------------------------------------------------------------------ 1200
+	.dashboard {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: 
+			"left right"
+			"center center"
+			". message"
+			"mint play"
+			"deploy .";
+		column-gap: 24px;
+
+		&__left {
+			margin-top: 0;
+		}
+		&__center {
+			padding-top: 4%;
+			padding-bottom: 4%;
+		}
+		&__right {
+			margin: 0;
+		}
+	}
+}
+
+
+@media (max-width: 768px) { //------------------------------------------------------------------------------------ 768
+	// .page {
+	// 	flex-wrap: wrap;
+	// }
+}
+
+@media (max-width: 640px) { //------------------------------------------------------------------------------------ 640
+	.dashboard {
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			"left"
+			"center"
+			"right"
+			"mint"
+			"message"
+			"play"
+			"deploy";
+	}
+}
+
+.dashboard__center {
+	position: relative;
+	height: 100%;
+	margin-top: 1rem;
+	max-height: 500px;
+	justify-content: space-around;
+}
+
+.planet_outline {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+}

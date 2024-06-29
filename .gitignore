@@ -1,0 +1,9 @@
+client
+.history
+.vscode
+.env
+/node_modules
+/.taq
+server/node_modules
+orbitez/node_modules
+

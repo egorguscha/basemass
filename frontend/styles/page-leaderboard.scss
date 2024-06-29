@@ -1,0 +1,32 @@
+.leaderBoard {
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    &__inner {
+		position: relative;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 3rem;
+        height: 100%;
+        padding: 2rem 1rem;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+
+	&__bg {
+		z-index: -1;
+	}
+}
+
+@media (max-width: 1200px) { //------------------------------------------------------------------------------------ 1200
+	.leaderBoard {
+        &__inner {
+            background: linear-gradient(120.88deg, rgba(39, 37, 73, 0.46) 17.16%, rgba(39, 37, 73, 0.2) 112.09%);
+        }
+
+        &__bg {display: none;}
+    }
+}
