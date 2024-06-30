@@ -1,6 +1,10 @@
 name: Orbitez Production CI
 
 on:
+  push:
+    branches:
+    - main
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -18,15 +22,15 @@ jobs:
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          cd ./orbitez-production/orbitez-secret/
-          git reset --hard
-          git pull https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/stepandra/orbitez-secret.git
-          git fetch https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/stepandra/orbitez-secret.git --prune
+          cd ./basemass
+          git pull https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           cd ./orbitez
           export NVM_DIR=~/.nvm
           source ~/.nvm/nvm.sh
-          nvm use --lts=gallium
-          echo "${{ secrets.PROD_ENV_FE }}" > './.env'
+          nvm use 20
           npm i
           npm run build &&
-          pm2 reload Orbitez-production
+          pm2 reload Basemass-FE-production
+          cd ../server
+          yarn
+          pm2 reload Basemass-MainEU-Server-production
