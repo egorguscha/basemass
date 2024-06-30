@@ -1,4 +1,4 @@
-name: Orbitez Production CI
+name: Basemass Production CI
 
 on:
   push:
