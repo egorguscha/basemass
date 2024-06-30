@@ -24,7 +24,7 @@ jobs:
         script: |
           cd ./basemass
           git pull https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          cd ./orbitez
+          cd ./frontend
           export NVM_DIR=~/.nvm
           source ~/.nvm/nvm.sh
           nvm use 20
