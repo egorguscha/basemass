@@ -15,7 +15,7 @@ const tempConfig = defineChain({
   id: 8453,
   name: "Base Mainnet",
   rpcUrls: {
-    default: { http: ["https://mainnet.base.org"] },
+    default: { http: ["https://lb.drpc.org/ogrpc\?network\=base\&dkey\=Ah6ynCE1ckILgW6n3fdltZuLyEZgM8IR76Q8hkHL9tz4"] },
   },
   nativeCurrency: {
     name: "Ethereum",
