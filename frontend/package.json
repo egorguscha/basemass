@@ -50,7 +50,7 @@
     "lint": "eslint ./components/** ./pages/** -c .eslintrc.json --ext js,jsx",
     "lint-fix": "eslint ./components/** ./pages/** -c .eslintrc.json --fix --ext js,jsx",
     "staging": "next start -p 8000",
-    "start": "next start -p 5001",
+    "start": "next start -p 5000",
     "test": "jest --watch"
   }
 }
