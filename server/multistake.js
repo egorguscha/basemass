@@ -7,17 +7,16 @@ const {
   createWalletClient,
   parseEther,
 } = require("viem");
-const { blastSepolia, modeTestnet } = require("viem/chains");
 
 const bots = require("./src/bots.json");
 const stakeAbi = require("./stake.abi.json");
 const { privateKeyToAccount } = require("viem/accounts");
 
 const tempConfig = defineChain({
-  id: 919,
-  name: "Mode Sepolia Testnet",
+  id: 8453,
+  name: "Base Mainnet",
   rpcUrls: {
-    default: { http: ["https://mode-testnet.drpc.org"] },
+    default: { http: ["https://mainnet.base.org"] },
   },
   nativeCurrency: {
     name: "Ethereum",

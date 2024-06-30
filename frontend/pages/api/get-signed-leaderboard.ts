@@ -23,7 +23,6 @@ import {
   parseEther,
   toBytes,
 } from "viem";
-import { blastSepolia } from "viem/chains";
 import { privateKeyToAccount } from "viem/accounts";
 import gameRoomAbi from "@/abi/game-room.abi.json";
 

@@ -8,16 +8,15 @@ import {
   useDisconnect,
   useAccount,
 } from "wagmi";
-import { blastSepolia, modeTestnet } from "wagmi/chains";
 import { getLogs, watchAsset } from "viem/actions";
 import { metaMask } from "wagmi/connectors";
 import { defineChain } from "viem";
 
 export const tempConfig = defineChain({
-  id: 919,
-  name: "Mode Sepolia Testnet",
+  id: 8453,
+  name: "Base Mainnet",
   rpcUrls: {
-    default: { http: ["https://mode-testnet.drpc.org"] },
+    default: { http: ["https://mainnet.base.org"] },
   },
   nativeCurrency: {
     name: "Ethereum",

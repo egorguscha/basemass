@@ -3,13 +3,12 @@ const path = require("path");
 const gameRoomAbi = require("../abi/game-room.abi.json");
 
 const { createPublicClient, http, defineChain } = require("viem");
-const { blastSepolia, modeTestnet } = require("viem/chains");
 
 const tempConfig = defineChain({
-  id: 919,
-  name: "Mode Sepolia Testnet",
+  id: 8453,
+  name: "Base Mainnet",
   rpcUrls: {
-    default: { http: ["https://mode-testnet.drpc.org"] },
+    default: { http: ["https://mainnet.base.org"] },
   },
   nativeCurrency: {
     name: "Ethereum",

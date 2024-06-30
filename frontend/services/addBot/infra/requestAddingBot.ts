@@ -16,7 +16,6 @@ import gameRoomAbi from "@/abi/game-room.abi.json";
 import { privateKeyToAccount } from "viem/accounts";
 import { publicClient } from "@/config/config";
 import { createWalletClient, etherUnits, http, parseEther } from "viem";
-import { blastSepolia } from "viem/chains";
 import { tempConfig } from "@/hooks/useChainManager";
 
 const hasPlanets = async (address) => {
