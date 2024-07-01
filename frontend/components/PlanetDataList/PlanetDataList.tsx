@@ -36,7 +36,7 @@ export function PlanetDataList({ className = "", mintHash, collectionId }) {
           on{" "}
           <a
             className="planetData__link"
-            href="https://www.fxhash.xyz/marketplace/generative/25858"
+            href="https://www.fxhash.xyz/generative/0xe68aC4BbaB9d5857E5b3bA68978B022385e44f37"
           >
             Marketplace
           </a>
