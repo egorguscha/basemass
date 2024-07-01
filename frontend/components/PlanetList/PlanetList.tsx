@@ -17,8 +17,8 @@ export function PlanetList({ setPlanetSelected, planetsAvailable, planetSelected
             }
             {!planetsAvailable.length && 
                 <li className="planetsList__text">
-                    <a className="planetsList__link" href="https://www.fxhash.xyz/generative/25858">Mint new planet</a> or  buy it <br />
-                    on <a className="planetsList__link" href="https://www.fxhash.xyz/marketplace/generative/25858">Marketplace</a>
+                    <a className="planetsList__link" href="https://www.fxhash.xyz/generative/0xe68aC4BbaB9d5857E5b3bA68978B022385e44f37">Mint new planet</a> or  buy it <br />
+                    on <a className="planetsList__link" href="https://www.fxhash.xyz/generative/0xe68aC4BbaB9d5857E5b3bA68978B022385e44f37">Marketplace</a>
                 </li>
             }
             </ol>
