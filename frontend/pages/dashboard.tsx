@@ -21,8 +21,6 @@ export default function Dashboard() {
   const router = useRouter();
   const [planetSelected, setPlanetSelected] = useState(0);
 
-  // const { serverName: selectedServerName } = useSelectedServerContext();
-
   const { data: planetsAvailable = [] } = usePlanets();
 
   const selectedPlanet = useMemo(() => {
@@ -66,29 +64,6 @@ export default function Dashboard() {
     router.push("/waiting-room");
   }, [isConfirmed]);
 
-  // const openDeploymentModal = useCallback(async () => {
-  //   // if (!isAuthLoaded) return;
-  //   // if (!address) await connectWallet();
-  //   // setDeploymentModalOpen(true);
-  // }, [isAuthLoaded, address]);
-
-  // const demoHud = async () => {
-  //     router.push("/hud?endless=true");
-  // };
-
-  // const mintOnFx = async () => {
-  //     const contract = await wallet.at(NFT_CONTRACT_ADDRESS);
-  //     try {
-  //         await contract.methods
-  //             .mint("tz1iJJPGh7arygfq5EC2sBaAF23T8iUYTpEH", 3808)
-  //             .send({ amount: 1 });
-
-  //         // router.push('/waiting-room')
-  //     } catch (e) {
-  //         console.log("Transaction rejected:", e);
-  //     }
-  // };
-
   return (
     <>
       <Head>
@@ -113,7 +88,6 @@ export default function Dashboard() {
             mintHash={selectedPlanet?.genHash}
             collectionId={selectedPlanet?.collectionId}
           />
-          <PayMethod />
         </div>
 
         <div className="dashboard__right">
@@ -126,14 +100,14 @@ export default function Dashboard() {
         <button
           className="btn btn--center btn--wide dashboard__area-mint"
           onClick={() =>
-              window.open(
-                  "https://www.fxhash.xyz/generative/0xe68aC4BbaB9d5857E5b3bA68978B022385e44f37",
-                  "_blank"
-              )
+            window.open(
+              "https://www.fxhash.xyz/generative/0xe68aC4BbaB9d5857E5b3bA68978B022385e44f37",
+              "_blank"
+            )
           }
-      >
+        >
           <span className="btn__iconPlus"></span> MINT NEW PLANET
-      </button>
+        </button>
 
         <span
           data-tip

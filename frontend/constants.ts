@@ -16,7 +16,7 @@ export const DEMO_PLANET = {
   tokenId: "demo",
   genHash: "ooKg2zuJu9XhZBRKQaBrEDvpeYZjDPmKREp3PMSZHLkoSFK3ejN",
   collectionId: 3808,
-  name: "orbitoID DEMO",
+  name: "Base planet",
 };
 
 // Time (in ms) that need to pass before it will be possible to add a bot
@@ -61,6 +61,9 @@ export const FX_HASH_CONTRACT_ADDRESS = "KT1BJC12dG17CVvPKJ1VYaNnaT5mzfnUTwXv";
 export const FX_HASH_NFT_PROJECT_ID = 25858;
 export const FX_HASH_NFT_PRICE = 2;
 
-export const STAKING_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_STAKING_CONTRACT_ADDRESS;
-export const GAME_ROOM_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_GAME_ROOM_CONTRACT_ADDRESS;
-export const NFT_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_NFT_CONTRACT_ADDRESS;
+export const STAKING_CONTRACT_ADDRESS =
+  process.env.NEXT_PUBLIC_STAKING_CONTRACT_ADDRESS;
+export const GAME_ROOM_CONTRACT_ADDRESS =
+  process.env.NEXT_PUBLIC_GAME_ROOM_CONTRACT_ADDRESS;
+export const NFT_CONTRACT_ADDRESS =
+  process.env.NEXT_PUBLIC_NFT_CONTRACT_ADDRESS;

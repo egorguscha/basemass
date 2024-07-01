@@ -9,21 +9,16 @@ export default function Landing() {
         <title>Basemass</title>
       </Head>
 
-      <main className="lp container container--small">
-        <div className="lp__content">
-          <Image
-            className="lp__logo"
-            src="/img/logo-big.svg"
-            width={982}
-            height={282}
-            alt="Logo"
-          />
-          <p className="lp__text">
-            Fight with players from all over the world as you try to become the
-            biggest Planet in a solar system! Control your tiny planet and eat
-            other players to grow larger. Mint your own, unique generative
-            planet as NFT to enter the battlefield!
-          </p>
+      <main className="">
+        <div
+          className="lp__content"
+          style={{
+            position: "absolute",
+            top: "50%",
+            width: "100%",
+            transform: "translateY(-50%)",
+          }}
+        >
           <Link href="/dashboard" className="lp__btn btn btn--center">
             Join the game
           </Link>
