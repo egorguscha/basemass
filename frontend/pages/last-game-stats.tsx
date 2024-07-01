@@ -57,11 +57,6 @@ export default function LastGameStats() {
   const { isLoading: isConfirming, isSuccess: isConfirmed } =
     useTransactionReceipt({ hash });
 
-  // const canClaimRewards = useCanClaimRewards({
-  //   serverName,
-  //   packed,
-  //   signed: signature,
-  // });
   useEffect(() => {
     if (!leaderboard) return;
 

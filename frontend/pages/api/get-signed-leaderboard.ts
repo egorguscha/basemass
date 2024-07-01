@@ -1,9 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+
 import {
   LEADERBOARD_SIGNING_PRIVATE_KEY,
-  CONTRACT_ADDRESS,
-  BASE_TZKT_API_URL,
-  RPC_URL,
   SHOULD_USE_LOCAL_DEV_SERVER,
 } from "../../constants";
 import axios from "axios";
@@ -61,8 +59,6 @@ export default async function handler(req, res) {
   })) as { player: `0x${string}`; score: any }[];
 
   fullLeaderboard.sort((a, b) => Number(b.score) - Number(a.score));
-
-  console.log("PK___", LEADERBOARD_SIGNING_PRIVATE_KEY);
 
   let expectedHash =
     "0x0000000000000000000000000000000000000000000000000000000000000000" as `0x${string}`;
