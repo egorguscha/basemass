@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { useChainManager } from "@/hooks/useChainManager";
 import { useAccount, useBalance } from "wagmi";
 import { formatUnits } from "viem";
+import { BlackCreateWalletButton } from "../BlackCreateWalletButton/BlackCreateWalletButton";
 
 export function Header() {
   const { connectWallet, disconnectWallet, isLoggedIn } = useChainManager();
@@ -73,6 +74,7 @@ export function Header() {
           <div className="header__address-text">{addressForDisplay}</div>
         )}
 
+        { !isLoggedIn ? <BlackCreateWalletButton /> : null }
         <Image
           className="header__icon"
           src="/img/icon-log-out.png"

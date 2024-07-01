@@ -9,7 +9,7 @@ import {
   useAccount,
 } from "wagmi";
 import { getLogs, watchAsset } from "viem/actions";
-import { metaMask } from "wagmi/connectors";
+import { coinbaseWallet, injected } from 'wagmi/connectors';
 import { defineChain } from "viem";
 
 export const tempConfig = defineChain({
@@ -27,6 +27,13 @@ export const tempConfig = defineChain({
 export const config = createConfig({
   chains: [tempConfig],
   ssr: true,
+  connectors: [
+    injected(),
+    coinbaseWallet({
+      appName: 'Basemass',
+      preference: 'smartWalletOnly',
+    }),
+  ],
   transports: {
     [tempConfig.id]: http(),
   },
