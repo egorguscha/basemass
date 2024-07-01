@@ -38,41 +38,6 @@ export default async function addBot(serverName) {
         availableBots,
         serverName
       );
-      //   const Tezos = new TezosToolkit(RPC_URL);
-      //   Tezos.addExtension(new TzktExtension({ url: BASE_TZKT_API_URL }));
-
-      //   const contract = await Tezos.contract.at(GAME_ROOM_CONTRACT_ADDRESS);
-      //   const storage = await contract.storage();
-
-      // Checking if the passed serverName is in the contract
-      //   const contractServers = storage.server.valueMap;
-      //   if (!contractServers.has(`"${serverName}"`)) {
-      //     const error = createError(
-      //       400,
-      //       `The requested server '${serverName}' is not registered in the contract`
-      //     );
-      //     reject(error);
-      //     return;
-      //   }
-
-      //   const pendingBotTransactions = PendingBotTransactions.getInstance();
-
-      // Checking if there isn't a pending bot adding transaction for this server
-      //   if (
-      //     pendingBotTransactions.isThereAPendingTransaction(serverName) &&
-      //     !pendingBotTransactions.isPendingTransactionConfirmed(serverName)
-      //   ) {
-      //     const error = createError(
-      //       429,
-      //       "A request for the addition of a bot for this server has already been sent"
-      //     );
-      //     reject(error);
-      //     return;
-      //   }
-
-      // Selecting all the players who are in the contract's storage
-      // (in the waiting room or in the game)
-      //   const players = storage.player.valueMap;
 
       // Filter by passed server
       let promisifiedCurrentServerWaitRoom = [];

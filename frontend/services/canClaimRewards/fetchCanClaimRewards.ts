@@ -17,7 +17,7 @@ const fetchCanClaimRewards = async (Tezos, balance, operationParams) => {
             const minimumBalanceToClaim = totalCost / 1e6;
     
             if (balance < minimumBalanceToClaim) {
-                reject("Not Enough TEZ to Claim Rewards");
+                reject("Not Enough ETH to Claim Rewards");
                 return;
             };
     

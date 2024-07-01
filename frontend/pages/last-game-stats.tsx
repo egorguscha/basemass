@@ -69,15 +69,6 @@ export default function LastGameStats() {
       try {
         const parsedLeaderboard = JSON.parse(leaderboard);
 
-        // const leaderboardWithDomains = await Promise.all(
-        //     parsedLeaderboard.map(async (player) => ({
-        //         tezosDomain: await resolveAddressToName(player.address),
-        //         ...player
-        //     }))
-        // );
-
-        // setLeaderboardForDisplay(leaderboardWithDomains);
-
         setLeaderboardForDisplay(
           parsedLeaderboard.map((item) => ({ address: item.player, ...item }))
         );
@@ -295,8 +286,7 @@ export default function LastGameStats() {
           )} */}
           <ShareButton
             text={getShareText(playerPlace)}
-            url="https://orbitez.io"
-            via="OrbiTez_io"
+            url="https://basemass.xyz"
           >
             Share to Twitter
           </ShareButton>

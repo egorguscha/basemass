@@ -19,7 +19,7 @@ export function ContestPrizesList() {
                             className="prizes__item"
                         >
                             <span className='prizes__list--bold'>{ contestPrize.place }</span>
-                            <span>{ contestPrize.reward } TEZ</span>
+                            <span>{ contestPrize.reward } ETH</span>
                         </li>
                     )
                 }

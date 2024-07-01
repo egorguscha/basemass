@@ -17,7 +17,7 @@ export const renderInner = (server) => ({
 
             <!-- <input id="nick" disabled class="form-control" placeholder="Nickname" maxlength="15"> -->
             <select style="display:none" id="gamemode" class="form-control" onchange="setserver(this.value)" required>
-                <option value="${server}" selected>ws.orbitez.io</option>
+                <option value="${server}" selected>ws.basemass.xyz</option>
             </select>
 
             <button class="popUp__btn btn btn--wide btn--center btn-play btn-primary btn-needs-server" id="play-btn">Play</button>

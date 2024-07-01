@@ -125,10 +125,15 @@ export default function Dashboard() {
 
         <button
           className="btn btn--center btn--wide dashboard__area-mint"
-          onClick={() => router.push("/stake")}
-        >
-          STAKE TO PLAY
-        </button>
+          onClick={() =>
+              window.open(
+                  "https://www.fxhash.xyz/generative/0xe68aC4BbaB9d5857E5b3bA68978B022385e44f37",
+                  "_blank"
+              )
+          }
+      >
+          <span className="btn__iconPlus"></span> MINT NEW PLANET
+      </button>
 
         <span
           data-tip

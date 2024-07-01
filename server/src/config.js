@@ -66,8 +66,8 @@ module.exports = Object.seal({
   "serverChat": 0,
   "serverChatAscii": 1,
   "separateChatForTeams": 0,
-  "serverName": "Orbitez.io",
-  "serverWelcome1": "Welcome to Orbitez.io!",
+  "serverName": "Basemass.xyz",
+  "serverWelcome1": "Welcome to Basemass.xyz!",
   "serverWelcome2": "",
   "clientBind": "",
 

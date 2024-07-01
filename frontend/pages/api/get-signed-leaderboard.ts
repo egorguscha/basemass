@@ -1,7 +1,4 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import { TezosToolkit } from "@taquito/taquito";
-import { TzktExtension } from "@tzkt/ext-taquito";
-import { InMemorySigner } from "@taquito/signer";
 import {
   LEADERBOARD_SIGNING_PRIVATE_KEY,
   CONTRACT_ADDRESS,

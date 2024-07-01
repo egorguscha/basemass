@@ -710,29 +710,10 @@ const SIZE_SCALE_COEF =
   let macroIntervalID;
   let quadtree;
   const playingPlanet = JSON.parse(localStorage.getItem("selectedPlanet"));
-  // const formatDomain = (domainName) => {
-  //   // Pattern to exclude ".orbi.tez"
-  //   const pattern = /\.orbi\.tez/;
 
-  //   const formattedDomainName = domainName.replace(pattern, "");
-
-  //   return formattedDomainName;
-  // };
-
-  // const getDomain = () => {
-  //   const rawDomainName = localStorage.getItem("tzDomain");
-
-  //   if (!rawDomainName || rawDomainName === "null") return null;
-
-  //   const formattedDomainName = formatDomain(rawDomainName);
-
-  //   return formattedDomainName;
-  // };
-  // const Domain = getDomain();
   const settings = {
     nick: localStorage.getItem("tzAddress"),
     skin: `${playingPlanet?.genHash}|${playingPlanet?.collectionId}`,
-    // skin: `${playingPlanet?.genHash}|${playingPlanet?.collectionId}`,
     gamemode: "",
     showSkins: true,
     showNames: true,

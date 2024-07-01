@@ -46,11 +46,11 @@ export const FAUCET = {
   privateKey: process.env.FAUCET_PRIVATE_KEY,
 };
 
-export const FAUCET_SINGLE_TRANSFER_AMOUNT = 10; // TEZ
+export const FAUCET_SINGLE_TRANSFER_AMOUNT = 10;
 
 // If the user's balance is greater than MAX_BALANCE_FOR_FAUCET_CLAIM, they ...
 // .. cannot claim money from the faucet
-export const MAX_BALANCE_FOR_FAUCET_CLAIM = 1500000; // Mutez
+export const MAX_BALANCE_FOR_FAUCET_CLAIM = 1500000;
 
 // Google Analytics
 export const IS_GA_ENABLED = process.env.NEXT_PUBLIC_IS_GA_ENABLED === "true";
